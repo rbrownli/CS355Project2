@@ -1,0 +1,12 @@
+/* Sonoma State Department Slider Style Sheet */
+/* Last Updated August 4th, 2011 */
+
+/****************************************************/
+/* THIS CSS FILE IS NOT TO BE EDITED FOR ANY REASON */
+/****************************************************/
+
+@import "/css/global/slider-nivo.css";
+
+body {background: #e2e2e2 url(/images/global/bg-banner.jpg) repeat-x !important;}
+/* Slider called on separate style sheet */
+#main-content {border-top: 3px solid #486598;}

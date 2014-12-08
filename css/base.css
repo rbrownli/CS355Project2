@@ -1,0 +1,429 @@
+/* Sonoma State Base Style Sheet */
+/* Last Updated December 23rd, 2012 */
+
+/****************************************************/
+/* THIS CSS FILE IS NOT TO BE EDITED FOR ANY REASON */
+/****************************************************/
+
+/**************** Table of Contents ******************
+
+1    ........Reset
+2    ........Body
+3    ........Wrapper
+4    ............Header
+5    ................Search Bar
+6    ................Upper Navbar
+7    ................Lower Navbar
+8    ........Main Content
+9    ...........Left Sidebar
+10   ...............Navigation
+
+11   ...........Homepage (@homepage.css)
+12   ...........Content (@content.css)
+13   ...........Audience (@audience.css)
+14   ...........Department (@department.css)
+
+15   .......Footer 
+	
+***************************************************/
+
+
+/*************** 1. Reset *************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	}
+body {line-height: 1;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after 
+{content: '';content: none;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+/****************** 2. Body ***********************/
+
+body {
+	background: #dcdcdc url(/images/global/bg.jpg) repeat-x;
+	color: #000;
+	font: 12px Arial, Helvetica, sans-serif;
+	line-height: 18px;
+	}
+body.section-1 #lower-nav-link-1,
+body.section-2 #lower-nav-link-2,
+body.section-3 #lower-nav-link-3,
+body.section-4 #lower-nav-link-4,
+body.section-5 #lower-nav-link-5,
+body.section-6 #lower-nav-link-6,
+body.section-7 #lower-nav-link-7,
+body.section-8 #lower-nav-link-8,
+body.section-9 #lower-nav-link-9
+{background: #506589;}
+
+/****************** 3. Wrapper ********************/
+
+#wrapper {margin: 0 auto;width: 960px;}
+
+/****************** 4. Header *********************/
+
+#header {
+	background: url(/images/global/header-bg.jpg) no-repeat;
+	display: block;
+	height: 153px;
+	width: 960px;
+	}
+.hide {display: none;}
+.hide-click {width: 281px; height: 97px; text-indent:-9999px; float: left;}
+.dept-hide-click {
+	width: 300px; 
+	height: 97px; 
+	text-indent:-9999px; 
+	float: left;
+	}
+.clear-left {clear: left;}
+.clear-right {clear: right;}
+.clear-both {clear: both; }
+
+/**************** 6. Search Bar *******************/		
+	
+#search-bar {
+	display: block;
+	float: right;
+	padding: 80px 0 0 0;
+	height: 18px;
+	overflow: hidden;
+	width: 155px;
+	}
+#search-bar input {
+	background: #ffffff url(/images/global/search-magnifying-glass.gif) no-repeat left;
+ 	*background: #ffffff url(/images/global/search-magnifying-glass.gif) no-repeat !important; /* Targets IE 6 + 7 */
+	color: #333;
+	border: 1px solid #717171;
+	display: block;
+	float: left;
+	height: 12px;
+	padding: 2px 4px 2px 20px;
+	padding: 0px 4px 4px 20px \9; /* Targets IE 8 + below */
+	width: 100px;
+	}
+#search-bar #search-go {
+	background: #ffffff !important;
+	border: 1px solid #717171;
+	display: block;
+	float: left;
+	font: 10px Arial, Helvetica, sans-serif;
+	height: 18px;
+	line-height: 10px;
+	padding: 0 0 0 15px \9; /* Targets IE 8 + below */
+	margin: 0 0 0 3px;
+	text-indent: -15px;
+	width: 24px;
+	}
+#search-bar label {display: none;}
+
+/***************** 6. Upper Nav *******************/
+		
+#upper-navbar {
+	clear: both;
+	float: right;
+	font: 10px Arial, Helvetica, sans-serif;
+	height: 12px;
+	padding: 12px 0 7px 0;
+	position: relative;
+	width: 960px;
+	*margin-left: -405px; /* Targets IE 7 + below */
+	}
+#upper-navbar a {color: #2e4875;text-decoration: none;}
+#upper-navbar ul {float: right;}
+#upper-navbar li {border-right: 1px solid #627597;display: inline;float: left;padding: 0px 16px 0 16px;}
+#upper-navbar li a:hover {color: #3399ca;}
+#upper-navbar li:last-child {border-right: none;}
+#upper-navbar li a span {color:#900900 !important;}
+
+/***************** 7. Lower Nav *******************/
+				
+#lower-navbar {
+	float: left;
+	font: 12px Arial, Helvetica, sans-serif;
+	height: 21px;
+	position: relative;
+	margin-top: 3px !important;
+	width: 960px !important;
+	background-color: #4e4e4e;
+	}
+#lower-navbar a {color: #f0f0f0;text-decoration: none;}
+#lower-navbar a:hover {background: #00b4ff;}
+#lower-navbar a.home-button-rollover {
+	display: block;
+	width: 33px;
+	height: 21px;
+	background: url(/images/global/home-button.jpg) no-repeat 0 0;
+	overflow: hidden;
+	text-indent: -10000px;
+	font-size: 0px;
+	line-height: 0px;
+	}
+#lower-navbar a:visited.home-button-rollover {background-position: 0 0;}
+#lower-navbar a:hover.home-button-rollover {background-position: 0 -21px;}
+#lower-navbar li:hover {background: #00b4ff;text-decoration: none;}
+#lower-navbar li:first-child {border-right: none;padding: 0;}
+#lower-navbar ul {padding: 0;background: #92afdd;}
+#lower-navbar li {
+	background: #4e4e4e;
+	border-right: 1px solid #677280;
+	display: inline;
+	float: left;
+	font: 12px Arial, Helvetica, sans-serif;
+	min-height: 18px;
+	padding: 3px 37px 0 37px;
+	
+	}
+#lower-navbar li:last-child {border-right: none;}
+
+/**************** 8. Main Content *****************/
+	
+#main-content {
+	background: #ffffff;
+	padding: 7px 7px 7px 7px;
+	width: 946px;
+	min-height: 400px;
+	float: left;
+	}
+#main-content a {color: #365990;}
+#main-content a:hover {color: #3399ca;}
+
+/*************** 9. Left Sidebar ******************/
+
+#left-sidebar {
+	float: left;
+	width: 190px;
+	padding: 0 0 7px 0;
+	}
+#left-sidebar h2 {
+	color: #365990;
+	font: 18px Arial, Helvetica, sans-serif;
+	padding: 0 0 3px 10px;
+	width: 175px;
+	}
+#left-sidebar hr {color: #ffffff;}
+
+/*************** 10. Navigation *******************/
+
+#navigation {padding: 0;}
+#navigation label {visibility: hidden;display: none;}
+#navigation ul {border-bottom: 1px dotted #c1c1c1;margin-left: 0px;padding-left: 0px;list-style-type: none;}
+#navigation ul ul {border-left: none;border-bottom: none;}
+#navigation li {border-top: 1px dotted #c1c1c1;}
+#navigation a {display: block;padding: 4px 0px 4px 20px;}
+#navigation a:link, #navigation a:visited {color: #365990;font: 12px Arial, Helvetica, sans-serif;text-decoration: none;}
+#navigation a:hover {color: #3399ca;text-decoration: none;}
+#navigation li ul {list-style-type: none;border-left: 0px solid white;border-bottom: 0px solid white;}
+#navigation li li a:link, #navigation li li a:visited {color: #436a19;text-decoration: none;padding-left: 40px;}
+#navigation li li a:hover {color: #629925;padding-left: 40px;}
+#navigation h2 a {color: #365990;font: 18px Arial, Helvetica, sans-serif !important;margin: -4px 0 -4px -20px;}
+
+/* menu-o-matic 
+These styles control the display of the navigation menu's subnav. */
+
+#menu #subnav-1,
+#menu #subnav-2,
+#menu #subnav-3,
+#menu #subnav-4,
+#menu #subnav-5,
+#menu #subnav-6,
+#menu #subnav-7,
+#menu #subnav-8,
+#menu #subnav-9,
+#menu #subnav-10,
+#menu #subnav-11,
+#menu #subnav-12,
+#menu #subnav-13,
+#menu #subnav-14,
+#menu #subnav-15,
+#menu #subnav-16,
+#menu #subnav-17,
+#menu #subnav-18 
+{text-decoration: none; display: none;}
+.link-section-1 #menu ul#subnav-1, 
+.link-section-2 #menu ul#subnav-2,
+.link-section-3 #menu ul#subnav-3,
+.link-section-4 #menu ul#subnav-4,
+.link-section-5 #menu ul#subnav-5,
+.link-section-6 #menu ul#subnav-6,
+.link-section-7 #menu ul#subnav-7,
+.link-section-8 #menu ul#subnav-8,
+.link-section-9 #menu ul#subnav-9,
+.link-section-10 #menu ul#subnav-10,
+.link-section-11 #menu ul#subnav-11,
+.link-section-12 #menu ul#subnav-12,
+.link-section-13 #menu ul#subnav-13,
+.link-section-14 #menu ul#subnav-14,
+.link-section-15 #menu ul#subnav-15,
+.link-section-16 #menu ul#subnav-16,
+.link-section-17 #menu ul#subnav-17,
+.link-section-18 #menu ul#subnav-18 
+{text-decoration: none; display: block;}
+.link-section-1 #menu ul#subnav-1 li, 
+.link-section-2 #menu ul#subnav-2 li,
+.link-section-3 #menu ul#subnav-3 li,
+.link-section-4 #menu ul#subnav-4 li,
+.link-section-5 #menu ul#subnav-5 li,
+.link-section-6 #menu ul#subnav-6 li,
+.link-section-7 #menu ul#subnav-7 li,
+.link-section-8 #menu ul#subnav-8 li,
+.link-section-9 #menu ul#subnav-9 li,
+.link-section-10 #menu ul#subnav-10 li,
+.link-section-11 #menu ul#subnav-11 li,
+.link-section-12 #menu ul#subnav-12 li,
+.link-section-13 #menu ul#subnav-13 li,
+.link-section-14 #menu ul#subnav-14 li,
+.link-section-15 #menu ul#subnav-15 li,
+.link-section-16 #menu ul#subnav-16 li,
+.link-section-17 #menu ul#subnav-17 li,
+.link-section-18 #menu ul#subnav-18 li 
+{text-decoration: none; }
+.link-section-1 #menu ul#subnav-1 a, 
+.link-section-2 #menu ul#subnav-2 a,
+.link-section-3 #menu ul#subnav-3 a,
+.link-section-4 #menu ul#subnav-4 a,
+.link-section-5 #menu ul#subnav-5 a,
+.link-section-6 #menu ul#subnav-6 a,
+.link-section-6 #menu ul#subnav-6 a,
+.link-section-7 #menu ul#subnav-7 a,
+.link-section-8 #menu ul#subnav-8 a,
+.link-section-9 #menu ul#subnav-9 a,
+.link-section-10 #menu ul#subnav-10 a,
+.link-section-11 #menu ul#subnav-11 a,
+.link-section-12 #menu ul#subnav-12 a,
+.link-section-13 #menu ul#subnav-13 a,
+.link-section-14 #menu ul#subnav-14 a,
+.link-section-15 #menu ul#subnav-15 a,
+.link-section-16 #menu ul#subnav-16 a,
+.link-section-17 #menu ul#subnav-17 a,
+.link-section-18 #menu ul#subnav-18 a 
+{display: block;}
+.link-section-1 a:link#link-1, .link-section-1 a:visited#link-1,
+.link-section-2 a:link#link-2, .link-section-2 a:visited#link-2,
+.link-section-3 a:link#link-3, .link-section-3 a:visited#link-3,
+.link-section-4 a:link#link-4, .link-section-4 a:visited#link-4,
+.link-section-5 a:link#link-5, .link-section-5 a:visited#link-5,
+.link-section-6 a:link#link-6, .link-section-6 a:visited#link-6,
+.link-section-7 a:link#link-7, .link-section-7 a:visited#link-7,
+.link-section-8 a:link#link-8, .link-section-8 a:visited#link-8,
+.link-section-9 a:link#link-9, .link-section-9 a:visited#link-9,
+.link-section-10 a:link#link-10, .link-section-10 a:visited#link-10,
+.link-section-11 a:link#link-11, .link-section-11 a:visited#link-11,
+.link-section-12 a:link#link-12, .link-section-12 a:visited#link-12,
+.link-section-13 a:link#link-13, .link-section-13 a:visited#link-13,
+.link-section-14 a:link#link-14, .link-section-14 a:visited#link-14,
+.link-section-15 a:link#link-15, .link-section-15 a:visited#link-15,
+.link-section-16 a:link#link-16, .link-section-16 a:visited#link-16,
+.link-section-17 a:link#link-17, .link-section-17 a:visited#link-17,
+.link-section-18 a:link#link-18, .link-section-18 a:visited#link-18  
+{border-bottom: 1px dotted  #c1c1c1;}
+/* removes the top border on the first subnav li */
+ul#subnav-1 > *:first-child,
+ul#subnav-2 > *:first-child,
+ul#subnav-3 > *:first-child,
+ul#subnav-4 > *:first-child,
+ul#subnav-5 > *:first-child,
+ul#subnav-6 > *:first-child,
+ul#subnav-7 > *:first-child,
+ul#subnav-8 > *:first-child,
+ul#subnav-9 > *:first-child,
+ul#subnav-10 > *:first-child,
+ul#subnav-11 > *:first-child,
+ul#subnav-12 > *:first-child,
+ul#subnav-13 > *:first-child,
+ul#subnav-14 > *:first-child,
+ul#subnav-15 > *:first-child,
+ul#subnav-16 > *:first-child,
+ul#subnav-17 > *:first-child,
+ul#subnav-18 > *:first-child 
+{border-top: none;}
+
+/* Template refresh of navigation styles below 01/23/12 */
+.link-section-1 #nav-1 a,
+.link-section-2 #nav-2 a,
+.link-section-3 #nav-3 a,
+.link-section-4 #nav-4 a,
+.link-section-5 #nav-5 a,
+.link-section-6 #nav-6 a,
+.link-section-7 #nav-7 a,
+.link-section-8 #nav-8 a,
+.link-section-9 #nav-9 a,
+.link-section-10 #nav-10 a,
+.link-section-11 #nav-11 a,
+.link-section-12 #nav-12 a,
+.link-section-13 #nav-13 a,
+.link-section-14 #nav-14 a,
+.link-section-15 #nav-15 a,
+.link-section-16 #nav-16 a,
+.link-section-17 #nav-17 a,
+.link-section-18 #nav-18 a
+{font-weight: bold;}
+.link-section-1 #subnav-1 a,
+.link-section-2 #subnav-2 a,
+.link-section-3 #subnav-3 a,
+.link-section-4 #subnav-4 a,
+.link-section-5 #subnav-5 a,
+.link-section-6 #subnav-6 a,
+.link-section-7 #subnav-7 a,
+.link-section-8 #subnav-8 a,
+.link-section-9 #subnav-9 a,
+.link-section-10 #subnav-10 a,
+.link-section-11 #subnav-11 a,
+.link-section-12 #subnav-12 a,
+.link-section-13 #subnav-13 a,
+.link-section-14 #subnav-14 a,
+.link-section-15 #subnav-15 a,
+.link-section-16 #subnav-16 a,
+.link-section-17 #subnav-17 a,
+.link-section-18 #subnav-18 a
+{font-weight: normal;}
+.page-link-1 .page1 a,
+.page-link-2 .page2 a,
+.page-link-3 .page3 a,
+.page-link-4 .page4 a,
+.page-link-5 .page5 a,
+.page-link-6 .page6 a,
+.page-link-7 .page7 a,
+.page-link-8 .page8 a,
+.page-link-9 .page9 a,
+.page-link-10 .page10 a,
+.page-link-11 .page11 a,
+.page-link-12 .page12 a,
+.page-link-13 .page13 a,
+.page-link-14 .page14 a,
+.link-15 .page15 a
+{font-weight: bold !important; background-color:#ffffd7;}
+				
+/***************** 16. Footer *********************/
+
+#footer {
+    background: #f8f8f8 url(/images/global/footer-seawolf.jpg) left no-repeat;
+	border-top: 3px solid #4e6581;
+	color: #4a4a4a;
+	float: left;
+	font: 11px Arial, Helvetica, sans-serif;
+	height: 84px;
+	position: relative;
+	margin: 7px 0 20px 0;
+	width: 960px;
+	}
+#footer p {padding: 14px 0 0 215px;line-height: 14px;}
+#footer span.bold {font-weight: bold;font-size: 12px;}
+#footer a {color: #4A6395;text-decoration: none;}
+#footer a:hover {color: #3399ca;text-decoration: underline;}
